@@ -31,7 +31,7 @@ function submitFunc(e) {
     xhttp.send(data)
 
     xhttp.onreadystatechange = function () {
-      if (this.readyState == 4 && this.status == 200) {
+      if (this.readyState == 4 && this.status == 200 || this.status == 400) {
       var response = this.responseText;
 
         response = JSON.parse (response)
